@@ -1,0 +1,20 @@
+{
+  "name": "kafka-daily-action-limiter",
+  "version": "1.0.0",
+  "description": "Kafka consumer that performs an action per key at most once every 24 hours",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "kafkajs": "^2.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  }
+}
